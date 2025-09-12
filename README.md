@@ -31,7 +31,7 @@ It is built using **Laravel (API backend)** and **React with Vite (frontend)**.
 
 1. Clone the repo and go into backend folder:  
    ```bash
-   git clone https://github.com/yourusername/quotebook.git
+   git clone https://github.com/Abdulwaheed78/quotebook_react.git
    cd quotebook/backend
    ```
 
