@@ -1,0 +1,13 @@
+.loading-container {
+  text-align: center;
+}
+
+.blink-text {
+  animation: fadeBlink 1.5s infinite;
+}
+
+@keyframes fadeBlink {
+  50% {
+    opacity: 0.4;
+  }
+}

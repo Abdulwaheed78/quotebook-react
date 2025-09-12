@@ -1,0 +1,116 @@
+.nav-link.active {
+  color: #198754 !important;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* theme switshing and buttons */
+/* Light Mode (default) */
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.theme-button {
+  background-color: #121212e0 !important;
+  color: #ffffff !important;
+  border-color: 1px solid #fff !important;
+}
+
+/* Light Mode (default) */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #249b28, #ffffff);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #000;
+  /* keep text visible */
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212e0 !important;
+  /* solid dark */
+  color: #ffffff !important;
+}
+
+
+body.dark-mode .navbar {
+  background-color: #121212e0 !important;
+  color: #ffffff !important;
+}
+
+
+
+body.dark-mode .card,
+body.dark-mode .text-xsm,
+body.dark-mode .btn-outline-dark,
+body.dark-mode .position-fixed,
+body.dark-mode .btn-outline-success,
+body.dark-mode .offcanvas-header,
+body.dark-mode .offcanvas-body,
+body.dark-mode .accordion-button,
+body.dark-mode .accordion-body {
+  background-color: #121212e0 !important;
+  color: #ffffff !important;
+  border-color: 1px solid #fff !important;
+}
+
+body.dark-mode button {
+  color: white
+  ;
+}
+
+
+
+body.dark-mode .theme-button {
+  background-color: #fff !important;
+  color: #121212e0 !important;
+  border-color: 1px solid #121212e0 !important;
+}
+
+body.dark-mode .nav-link,
+body.dark-mode .text-dark,
+body.dark-mode p,
+body.dark-mode .accodition-button::after {
+  color: #fff !important;
+}
+
+body.dark-mode .nav-link.active {
+  color: #198754 !important;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+body.dark-mode footer,
+body.dark-mode span {
+  background-color: #121212e0 !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode li p {
+  color: red !important;
+}
+
+/* theme switshibf  */
+
+
+/* Light mode inputs (default Bootstrap look) */
+
+
+/* Dark mode inputs */
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  border: 1px solid #555 !important;
+}
+
+/* Fix placeholder text in dark mode */
+body.dark-mode .form-control::placeholder {
+  color: #aaa !important;
+}
