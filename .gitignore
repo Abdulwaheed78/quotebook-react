@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-/components/gemini.js
+/src/components/gemini.js
 
 # Editor directories and files
 .vscode/*
