@@ -4,11 +4,14 @@ import Loading from "./Loading";
 import LikeButton from "./LikeButton";
 import CopyButton from "./CopyButton";
 import ShareButton from "./ShareButton";
+import Spinner from "./Spinner";
 
 function Quote() {
   const [data, setData] = useState([]);
+  const [spinner,setSpinner]=useState(false);
 
   function fetchRandom() {
+    setSpinner(true);
     fetch("http://127.0.0.1:8000/api/random-quote", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("quoteApiToken")}`,
@@ -19,7 +22,9 @@ function Quote() {
         return res.json();
       })
       .then((data) => {
+        setSpinner(false);
         setData(data);
+
         //console.log("Random quote:", data);
       })
       .catch((err) => console.error("Error fetching random quote:", err));
@@ -89,7 +94,8 @@ function Quote() {
               className="btn btn-sm btn-outline-dark"
               onClick={() => fetchRandom()}
             >
-              New Quote
+              {spinner ? (<Spinner size="sm"/>):'New Quote'}
+              
             </button>
           </div>
         </div>

@@ -36,6 +36,13 @@ function Navbar({ token, setToken }) {
                   Quote of the day
                 </NavLink>
               </li>
+
+              <li className="nav-item">
+                <NavLink className={active ? "nav-link active" : "nav-link"} to="/aiquote">
+                  AiQuote
+                </NavLink>
+              </li>
+
               <li className="nav-item">
                 <NavLink
                   className={active ? "nav-link active" : "nav-link"}
@@ -83,7 +90,7 @@ function Navbar({ token, setToken }) {
 
                   <li className="nav-item">
                     <p
-                      style={{ cursor: "pointer",marginLeft:'10px' }}
+                      style={{ cursor: "pointer", marginLeft: "10px" }}
                       onClick={() => {
                         if (
                           window.confirm("Are you sure you want to logout?")

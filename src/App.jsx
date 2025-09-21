@@ -10,6 +10,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import { useState } from "react";
 import Profile from "./components/Profile";
+import AiQuote from "./components/AiQuote";
 
 function App() {
   
@@ -53,6 +54,10 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route path="/aiquote" element={<ProtectedRoute>
+          <AiQuote />
+        </ProtectedRoute>} />
+
         <Route
           path="/login"
           element={
