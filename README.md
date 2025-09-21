@@ -40,7 +40,7 @@ It is built using **Laravel (API backend)** and **React with Vite (frontend)**.
    composer install
    ```
 
-3. Create `.env` file (copy from `.env.example`) and update DB credentials:  
+3. Create `.env` file (copy from `.env.example`) and  update DB credentials:  
    ```env
    DB_DATABASE=quotebook
    DB_USERNAME=root
@@ -76,8 +76,12 @@ It is built using **Laravel (API backend)** and **React with Vite (frontend)**.
    ```env
    VITE_API_URL=http://127.0.0.1:8000/api
    ```
-
-4. Start the React app:  
+4. create gemini.js file inside components folder and define the constant and export like :
+   ```bash
+   export const GEMINI_API_KEY ="use your gemini api key ";
+   ```
+   
+6. Start the React app:  
    ```bash
    npm run dev
    ```  
